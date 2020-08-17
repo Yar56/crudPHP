@@ -51,3 +51,23 @@ function display_flesh_message ($name)
 function redirect_to ($path){
     header('Location:' . $path);
 }
+
+
+
+
+function login ($email, $password) {
+
+    $user = get_user_by_email($email);
+
+    if (!empty($user)) {
+        if (password_verify($password, $user['password'])){
+            set_flesh_message('succes', 'Вы авторизовались');
+            $_SESSION['login'] = $email;
+            return true;
+        }
+    }
+    set_flesh_message('danger', 'Неверный логин или пароль');
+    return false;
+
+}
+

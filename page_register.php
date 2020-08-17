@@ -65,9 +65,6 @@
                             </div>
                             <div class="col-xl-6 ml-auto mr-auto">
                                 <div class="card p-4 rounded-plus bg-faded">
-<!--                                    <div class="alert alert-danger text-dark" role="alert">-->
-<!--                                        <strong>Уведомление!</strong> Этот эл. адрес уже занят другим пользователем.-->
-<!--                                    </div>-->
                                     <?php
                                         display_flesh_message('danger');
                                     ?>
