@@ -3,7 +3,7 @@
 
     require 'functions.php';
     if (empty($_SESSION['login'])) {
-        redirect_to('/page_login.php');
+        redirect_to('/index.php');
         exit();
     }
 
@@ -35,9 +35,7 @@
     <link rel="stylesheet" media="screen, print" href="css/fa-brands.css">
 </head>
 <body style="background-color: rgba(22,130,215,0.58)">
-    <?php
-        display_flesh_message('success');
-    ?>
+
     <h1 class="m-5">Привет! <?php echo $_SESSION['login'];  ?></h1>
 
 </body>

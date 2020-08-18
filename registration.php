@@ -19,4 +19,4 @@ if (!empty($user)) {
 
 add_user($email_form, $password_form);
 set_flesh_message('success', "Регистрация успешна");
-redirect_to('/page_login.php');
+redirect_to('/index.php');

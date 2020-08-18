@@ -14,4 +14,4 @@ if (!empty($login)) {
     redirect_to('/home_page.php');
     exit;
 }
-redirect_to('./page_login.php');
+redirect_to('/index.php');
