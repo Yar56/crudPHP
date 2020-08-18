@@ -12,6 +12,7 @@ function get_user_by_email ($email)
 
     return $user;
 
+
 }
 
 
@@ -56,7 +57,7 @@ function redirect_to ($path){
 
 
 function login ($email, $password) {
-
+    require "confDB.php";
     $user = get_user_by_email($email);
 
     if (!empty($user)) {

@@ -1,7 +1,9 @@
 <?php
     session_start();
     require "functions.php";
-
+    if (isset($_SESSION['login'])) {
+        redirect_to('/home_page.php');
+    }
 ?>
 
 <!DOCTYPE html>

@@ -10,6 +10,7 @@ $password= $_POST['password'];
 
 
 $login = login($email,$password);
+
 if (!empty($login)) {
     redirect_to('/home_page.php');
     exit;
